@@ -2,12 +2,14 @@
 
 import "./CaractersPage.css"
 
-export default function CaractersPage () {
+ function CaractersPage () {
 
 
     return (
         <div>
-
+            
         </div>
     )
 }; 
+
+export default CaractersPage; 
