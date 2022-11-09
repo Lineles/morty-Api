@@ -1,19 +1,27 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
-
+import CaracterQuiz from "./Components/CaracterQuiz/CaracterQuiz";
+import Quiz from "./Components/CaracterQuiz/Quiz";
+import QuizContextProvider from "./Contexts/QuizContext";
 
 import './App.css';
-import CaractersPage from "./Components/CaracterPage/CaractersPage";
-import Homepage from "./Components/Homepage/Homepage";
+import Header from "./Components/Header/Header";
+
 
 function App() {
 
+  
   return (
-    <Router >
-      <Routes>
-        <Route path="/" element={<Homepage />} /> 
-        <Route path="/caracters" element={<CaractersPage />} />
-      </Routes>
-    </Router>
+
+      <QuizContextProvider>
+          <Router >
+            <Header /> 
+            <Routes>
+              <Route path="/" element={<Quiz /> } /> 
+              <Route path="/CaracterQuiz" element={<CaracterQuiz />} />
+            </Routes>
+          </Router>
+      </QuizContextProvider>
+
   );
 }
 
