@@ -16,9 +16,9 @@ function QuizSettings (props) {
         }
 
     let Easy =  [1, 2, 3 , 4, 5];
-    let Medium = [1, 2, 3 , 4, 5];
-    let Hard = [1, 2, 3 , 4, 5];
-    let Imposible = [1, 2, 3 , 4, 5]; 
+    let Medium = [6, 599, 242 , 244, 77];
+    let Hard = [65, 109, 118, 201, 243];
+    let Imposible = [139, 287, 319 , 489, 566]; 
 
 return(
     <div className="Settings-Popup">

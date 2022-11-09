@@ -25,17 +25,20 @@ function CaracterQuiz (props) {
   }, [api]);
 
    let {name, id, image} = Caracter;
+
+  
    
    const nextQuestion = (QuestionInput) => {
         if (QuestionInput.toLowerCase() === name.toLowerCase()) {
-            setRightAnswers(rightAnswers += 1)
-            setCurrentQuestion(currentQuestion += 1)
-            setPoints(points += 10)
+            
+            setRightAnswers(rightAnswers += 1);
+            setCurrentQuestion(currentQuestion += 1);
+            setPoints(points += 10);
         } else {
-            console.log("false")
             setwrongAnswers(wrongAnswers += 1);
-            setCurrentQuestion(currentQuestion += 1)
+            setCurrentQuestion(currentQuestion += 1);
         }
+
     };
 
     const endGame = () => {
@@ -69,6 +72,8 @@ function CaracterQuiz (props) {
             </div>)
         }}
     
+
+
     
     return (
         <div className="Caracter-Quiz-Container"> 
